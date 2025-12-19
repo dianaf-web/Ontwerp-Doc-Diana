@@ -4,7 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lost in Tra(i)nslation</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/flexboxes.css">
+  <link rel="stylesheet" href="assets/nav.css">
+  <link rel="stylesheet" href="assets/typography.css">
+  
+  <link href="dist/output.css" rel="stylesheet">
+
 </head>
 <header class="w-full bg-white/80 backdrop-blur border-b border-black/10">
   <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
@@ -47,6 +53,7 @@
 
   <!-- Content -->
   <div class="relative max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-12 gap-12">
+
     
     <div class="md:col-span-7">
       <h1 class="text-6xl md:text-7xl font-extrabold leading-[0.95] mb-8">
@@ -76,6 +83,17 @@
 
     </div>
   </section>
+  <button
+  onclick="downloadPDF()"
+  class="px-3 py-2 text-sm bg-cyan-400 text-white rounded-md font-medium hover:bg-blue-500 transition"
+>
+  Download PDF
+</button>
+   <script>
+  function downloadPDF() {
+    window.print();
+  }
+</script>
 
   <!-- OVER / WORK -->
   <section id="over" class="py-24">

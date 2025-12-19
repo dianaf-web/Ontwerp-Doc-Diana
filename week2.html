@@ -1,37 +1,228 @@
-<section class="max-w-3xl mx-auto py-16 px-6">
-  <h1 class="text-3xl font-bold mb-6">Week 2 – Wireframes</h1>
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Week 2 – Documentatie</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
 
-  <p class="mb-4 text-gray-700">
-    In week 2 ging de les over <strong>wireframes</strong>.
-    We leerden wat wireframes zijn en waarom ze belangrijk zijn binnen het ontwerpproces
-    van de opdracht <strong>Lost in Tra(i)nslation</strong>.
-    Wireframes helpen om eerst de structuur van een website te bepalen,
-    zonder meteen bezig te zijn met kleuren of styling.
-  </p>
+<body class="bg-gradient-to-b from-slate-900 via-blue-950 to-slate-900 text-white min-h-screen">
 
-  <p class="mb-4 text-gray-700">
-    Tijdens dit contactmoment zijn we gestart met het maken van een
-    <strong>eenvoudige low-fidelity schets</strong>.
-    We deden dit in <strong>Figma</strong>.
-    Ik heb gewerkt met basisvormen zoals blokken en lijnen
-    om de indeling van de pagina’s duidelijk te maken.
-  </p>
+  <main class="max-w-6xl mx-auto px-6 py-20">
 
-  <p class="mb-4 text-gray-700">
-    Bij het maken van de wireframes heb ik nagedacht over waar tekst,
-    afbeeldingen en knoppen moeten komen.
-    Het doel was om een logisch en overzichtelijk ontwerp te maken,
-    dat makkelijk te begrijpen is voor de gebruiker.
-  </p>
+    <!-- Header -->
+    <div class="flex items-center justify-between gap-4 mb-12">
+      <div>
+        <p class="text-sm text-white/60">Fakashchuk Diana 1GDM2</p>
+        <h1 class="text-4xl md:text-5xl font-extrabold">Week 2</h1>
+      </div>
 
-  <p class="mb-4 text-gray-700">
-    Ik merkte dat het werken met wireframes mij hielp om beter na te denken
-    over de navigatie van de website en de volgorde van informatie.
-    Het maken van schetsen in Figma gaf mij meer inzicht in hoe een ontwerp stap voor stap wordt opgebouwd.
-  </p>
+      <a href="documentatie.html" class="text-blue-300 hover:text-blue-200 transition">
+        ← Terug naar overzicht
+      </a>
+    </div>
 
-  <p class="text-gray-700">
-    Deze week stond vooral in het teken van het maken van <strong>wireframes</strong>,
-    het oefenen met Figma en het werken aan de basis van mijn ontwerp.
-  </p>
+    <!-- Hoofdcard -->
+    <section class="rounded-3xl bg-white/5 border border-white/10 p-8 backdrop-blur shadow-xl">
+      <h2 class="text-2xl font-bold mb-4">Introductie en schetsen</h2>
+
+      <p class="text-white/80 leading-relaxed mb-4">
+        In week 2 heb ik verder gewerkt aan mijn ontwerp in <strong>Figma</strong>.
+        Ik heb mijn schetsen van papier omgezet naar <strong>digitale schermen</strong>.
+        Daarbij heb ik gelet op een <strong>duidelijke indeling</strong>, zodat de informatie snel leesbaar is voor gebruikers.
+        Ook heb ik nagedacht over hoe reizigers in één oogopslag kunnen zien waar ze moeten zijn en wat belangrijk is.  
+      </p>
+     </section>
+
+     <!-- Overzichtsschermen-->
+     <section class="mt-6">
+     <div class="grid md:grid-cols-2 gap-8 items-start">
+    <h2 class="md:col-span-2 text-3xl font-extrabold mb-6">
+      Overzichtsscherm
+</h2>
+
+        
+      <!-- FOTO -->
+     <img 
+     src="./assets/Overzichtsschermenfigma.png"
+     alt="Overzicht van schetsen week 1"
+     class="w-full max-w-sm rounded-2xl shadow-lg cursor-pointer hover:scale-110 transition"
+     onclick="openImage(this.src)"
+     />
+     <div class="relative rounded-3xl overflow-hidden max-w-xl">
+
+    
+     <!-- TEKST KADER -->
+   <div class="relative rounded-3xl overflow-hidden max-w-xl">
+      <img
+        src="./assets/tasha-kostyuk-JaIKK9Y3gLI-unsplash.jpg"
+        alt="Achtergrond"
+        class="absolute inset-0 w-full h-full object-cover"
+      />
+      <div class="absolute inset-0 bg-black/75"></div>
+
+      <div class="relative p-8 text-white">
+        <h3 class="text-2xl font-bold mb-4">Overzichtsscherm Figma</h3>
+
+        <p class="mb-4 text-white/90">
+          Voor deze opdracht heb ik een schets van een overzichtsscherm gemaakt voor een stationsomgeving.
+          Op dit scherm wordt een lijst met treinen getoond met belangrijke informatie zoals <strong>vertrektijd, treinnummer, bestemming, perronnummer en status</strong>.
+        </p>
+
+        <p class="text-white/80">
+          Ik heb gekozen voor een <strong>duidelijke en overzichtelijke indeling</strong>, zodat reizigers snel kunnen zien welke trein ze nodig hebben.
+          De <strong>status van de trein</strong> wordt extra benadrukt met kleur, zodat in één oogopslag duidelijk is of een trein op tijd, vertraagd of geannuleerd is.
+        </p>
+
+         <p class="text-white/80">
+          Het doel van deze schets is om reizigers <strong>snel en eenvoudig te informeren</strong> en hen te helpen zich beter te oriënteren op het station.
+          Deze schets vormt de basis voor een verdere digitale uitwerking in een later stadium.  
+        </p>
+      </div>
+    </div>
+  </div>
 </section>
+
+     
+
+
+     <!-- Perronscherm -->
+     <section class="mt-10">
+  <div class="grid md:grid-cols-2 gap-8 items-start">
+    <h2 class="md:col-span-2 text-3xl font-extrabold mb-6">
+      Perronscherm
+    </h2>
+
+    <!-- FOTO -->
+    <img
+      src="./assets/Perronschermenfigma.png"
+      alt="Perron scherm schets"
+      class="w-full max-w-sm rounded-2xl shadow-lg cursor-pointer hover:scale-110 transition"
+      onclick="openImage(this.src)"
+    />
+
+    <!-- TEKST KADER -->
+    <div class="relative rounded-3xl overflow-hidden w-[545px] h-[440px] -rotate-120 origin-center">
+      <img
+        src="./assets/tasha-kostyuk-JaIKK9Y3gLI-unsplash.jpg"
+        alt="Achtergrond"
+        class="absolute inset-0 w-full h-full object-cover"
+      />
+      <div class="absolute inset-0 bg-black/75"></div>
+
+      <div class="relative p-8 text-white">
+        <h3 class="text-2xl font-bold mb-4">Perronscherm Figma</h3>
+
+        <p class="mb-4 text-white/90">
+         Ik heb gewerkt aan het <strong>ontwerp van een perronscherm</strong>.
+         Dit scherm toont belangrijke informatie voor reizigers, 
+         zoals <strong>vertrektijd, treinnummer, bestemming, perron en de status van de trein</strong>.  
+        </p>
+
+        <p class="text-white/80">
+          Ik heb <strong>kleuren gebruikt voor de treinstatus</strong>, 
+          zodat reizigers snel kunnen zien wat de situatie is:
+          <strong>groen betekent dat de trein op tijd is, en rood staat voor vertraging of annulering.</strong> 
+          Daarnaast heb ik een <strong>route-lijn met haltes</strong> toegevoegd om de richting van de trein duidelijk te maken.
+        </p>
+
+        <p class="text-white/80">
+          Het doel van dit scherm is om <strong>reizigers snel en duidelijk te informeren</strong>.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+   
+      <!-- TITEL -->
+     <h2 class="text-3xl font-extrabold mb-6 mt-20">
+     Wagonscherm
+</h2>
+
+      <!-- GRID -->
+     <div class="grid md:grid-cols-2 gap-8 items-start">
+
+     <!-- FOTO -->
+    <img
+     src="./assets/Wagonschermenfigma.png"
+     alt="Wagon scherm schets"
+     class="w-full rounded-2xl shadow-lg cursor-pointer hover:scale-105 transition"
+     onclick="openImage(this.src)"
+   />
+
+     <!-- TEKST KADER -->
+     <div class="relative rounded-3xl overflow-hidden w-full min-h-[360px]">
+     <img
+      src="./assets/tasha-kostyuk-JaIKK9Y3gLI-unsplash.jpg"
+      class="absolute inset-0 w-full h-full object-cover"
+      alt=""
+    />
+
+    <div class="absolute inset-0 bg-black/75"></div>
+
+    <div class="relative p-8 text-white">
+      <h3 class="text-2xl font-bold mb-4">
+        Schetsen Wagonscherm
+      </h3>
+
+      <p class="mb-4 text-white/90">
+     Deze week heb ik ook gewerkt aan het <strong>ontwerp van een wagonscherm</strong>.
+     Dit scherm laat zien <strong>uit welke wagons de trein bestaat</strong>  en <strong></strong>welke voorzieningen</strong> er in elke wagon aanwezig zijn.
+      </p>
+
+      <p class="text-white/80">
+     Met <strong>iconen</strong> wordt aangegeven waar <strong>wifi, plaatsen voor gezinnen met kinderen, toiletten, toegankelijkheid voor mensen met een beperking</strong> en <strong>fietsplaatsen</strong> zijn. 
+     Dit helpt reizigers om <strong>al vóór het instappen de juiste wagon te kiezen</strong>.
+      </p> 
+
+      <p class="text-white/80">
+     Het doel van dit scherm is om het <strong>instappen overzichtelijker en makkelijker te maken.
+     </p> 
+    </div>
+
+  </div>
+</div>
+</section>
+
+
+
+  </main>
+<script>
+  function openImage(src) {
+    const overlay = document.getElementById("imageOverlay");
+    const img = document.getElementById("overlayImg");
+    img.src = src;
+    overlay.classList.remove("hidden");
+    overlay.classList.add("flex");
+  }
+
+  function closeImage() {
+    const overlay = document.getElementById("imageOverlay");
+    overlay.classList.add("hidden");
+    overlay.classList.remove("flex");
+  }
+</script>
+
+</body>
+<!-- IMAGE OVERLAY (vergrote foto) -->
+<div
+  id="imageOverlay"
+  class="fixed inset-0 bg-black/80 hidden items-center justify-center z-50"
+  onclick="closeImage()"
+>
+  <img
+    id="overlayImg"
+    class="max-w-[90%] max-h-[90%] rounded-2xl shadow-2xl"
+  />
+</div>
+<!-- TERUG -->
+    <div class="mt-16 text-center">
+      <a href="index.html" class="text-blue-400 hover:text-blue-300 underline">
+        ← Terug naar home
+      </a>
+    </div>
+</main>
+
+</body>
+</html>

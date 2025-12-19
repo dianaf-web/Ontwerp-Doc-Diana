@@ -3,10 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Documentatie</title>
+  <title>Lost in Tra(i)nslation</title>
 
-  <!-- Tailwind -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/flexboxes.css">
+  <link rel="stylesheet" href="assets/nav.css">
+  <link rel="stylesheet" href="assets/typography.css">
+
+ <style>
+    header {
+      background: transparent !important;
+    }
+
+    header::before,
+    header::after,
+    h1::before,
+    h1::after {
+      background: transparent !important;
+      content: "" !important;
+    }
+  </style>
+
+  
+  <link href="dist/output.css" rel="stylesheet">
+
 </head>
 
 <body class="bg-gradient-to-b from-slate-900 via-blue-950 to-slate-900 text-white min-h-screen">
@@ -15,23 +35,30 @@
 
     <!-- Titel -->
     <header class="mb-16 text-center">
-      <h1 class="text-4xl md:text-5xl font-extrabold mb-4">
-        Mijn documentatie
-      </h1>
-      <p class="text-white/70 max-w-xl mx-auto">
-        Hier vind je mijn ontwerpproces per week, inclusief keuzes, iteraties en reflecties.
+     <h1 class="text-4xl md:text-5xl font-extrabold mb-4 text-white tracking-wider">
+     MIJN DOCUMENTATIE
+     </h1>
+       
+      <p class="text-white/70 max-w-xl mx-auto tracking-wide">
+      Hier vind je mijn ontwerpproces per week, inclusief keuzes, iteraties en reflecties.
       </p>
-    </header>
+</header>
+
 
     <!-- GRID MET WEEK-KNOPPEN -->
     <section class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
 
       <!-- WEEK CARD -->
-      <a href="week1.html" class="group">
+      <a href="week1.html" class="group focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 rounded-3xl">
         <div class="rounded-3xl bg-white/5 border border-white/10 p-6 text-center backdrop-blur
                     hover:bg-white/10 hover:border-blue-400/50 transition">
           <p class="text-sm text-white/60 mb-2">Documentatie</p>
           <h2 class="text-xl font-bold mb-3">Week 1</h2>
+
+          <!-- THEMA TEKST -->
+         <p class="text-sm text-white/100 mb-4">
+          Contactmoment & introductie
+       </p>
           
           <span class="inline-block text-sm text-blue-300 group-hover:text-blue-200">
             Bekijk →
@@ -39,83 +66,151 @@
         </div>
       </a>
 
-      <a href="week2.html" class="group">
-        <div class="rounded-3xl bg-white/5 border border-white/10 p-6 text-center backdrop-blur
-                    hover:bg-white/10 hover:border-blue-400/50 transition">
+       <a href="week2.html"
+      class="group focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 rounded-3xl">
+         <div class="rounded-3xl bg-white/5 border border-white/10 p-6 text-center backdrop-blur
+              transition hover:bg-white/10 hover:border-blue-400/50">
           <p class="text-sm text-white/60 mb-2">Documentatie</p>
           <h2 class="text-xl font-bold mb-3">Week 2</h2>
-          <span class="text-sm text-blue-300 group-hover:text-blue-200">Bekijk →</span>
-        </div>
-      </a>
 
-      <a href="week3.html" class="group">
+          <!-- THEMA TEKST -->
+         <p class="text-sm text-white/100 mb-4">
+          Introductie en schetsen
+       </p>
+          
+          <span class="inline-block text-sm text-blue-300 group-hover:text-blue-200">
+      Bekijk →
+    </span>
+  </div>
+</a>
+
+
+      <a href="week3.html" 
+      class="group focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 rounded-3xl">
         <div class="rounded-3xl bg-white/5 border border-white/10 p-6 text-center backdrop-blur
-                    hover:bg-white/10 hover:border-blue-400/50 transition">
+                        hover:bg-white/10 hover:border-blue-400/50 transition">
           <p class="text-sm text-white/60 mb-2">Documentatie</p>
           <h2 class="text-xl font-bold mb-3">Week 3</h2>
-          <span class="text-sm text-blue-300 group-hover:text-blue-200">Bekijk →</span>
-        </div>
-      </a>
 
-      <a href="week4.html" class="group">
+          <!-- THEMA TEKST -->
+         <p class="text-sm text-white/100 mb-4">
+          Typografie, kleur & stijlen
+       </p>
+
+          <span class="text-sm text-blue-300 group-hover:text-blue-200">
+            Bekijk →
+        </span>
+     </div>
+</a>
+
+      <a href="week4.html" 
+      class="group focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 rounded-3xl">
         <div class="rounded-3xl bg-white/5 border border-white/10 p-6 text-center backdrop-blur
                     hover:bg-white/10 hover:border-blue-400/50 transition">
           <p class="text-sm text-white/60 mb-2">Documentatie</p>
           <h2 class="text-xl font-bold mb-3">Week 4</h2>
+
+          <!-- THEMA TEKST -->
+         <p class="text-sm text-white/100 mb-4">
+          Structuur, grids en layout
+       </p>
+
           <span class="text-sm text-blue-300 group-hover:text-blue-200">Bekijk →</span>
         </div>
       </a>
 
-      <a href="week5.html" class="group">
+      <a href="week5.html" 
+      class="group focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 rounded-3xl">
         <div class="rounded-3xl bg-white/5 border border-white/10 p-6 text-center backdrop-blur
                     hover:bg-white/10 hover:border-blue-400/50 transition">
           <p class="text-sm text-white/60 mb-2">Documentatie</p>
           <h2 class="text-xl font-bold mb-3">Week 5</h2>
+
+          <!-- THEMA TEKST -->
+         <p class="text-sm text-white/100 mb-4">
+          Introductie HTML & CSS
+       </p>
+
           <span class="text-sm text-blue-300 group-hover:text-blue-200">Bekijk →</span>
         </div>
       </a>
 
-      <a href="week6.html" class="group">
+      <a href="week6.html"
+      class="group focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 rounded-3xl">
         <div class="rounded-3xl bg-white/5 border border-white/10 p-6 text-center backdrop-blur
                     hover:bg-white/10 hover:border-blue-400/50 transition">
           <p class="text-sm text-white/60 mb-2">Documentatie</p>
           <h2 class="text-xl font-bold mb-3">Week 6</h2>
+
+          <!-- THEMA TEKST -->
+         <p class="text-sm text-white/100 mb-4">
+          Mijn eigen website – wat ik heb  geleerd
+       </p>
+
           <span class="text-sm text-blue-300 group-hover:text-blue-200">Bekijk →</span>
         </div>
       </a>
 
-      <a href="week7.html" class="group">
+      <a href="week7.html" 
+      class="group focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 rounded-3xl">
         <div class="rounded-3xl bg-white/5 border border-white/10 p-6 text-center backdrop-blur
                     hover:bg-white/10 hover:border-blue-400/50 transition">
           <p class="text-sm text-white/60 mb-2">Documentatie</p>
           <h2 class="text-xl font-bold mb-3">Week 7</h2>
+
+          <!-- THEMA TEKST -->
+         <p class="text-sm text-white/100 mb-4">
+           Werken met Tailwind CSS (styling & layout)
+       </p>
+
           <span class="text-sm text-blue-300 group-hover:text-blue-200">Bekijk →</span>
         </div>
       </a>
 
-      <a href="week8.html" class="group">
+      <a href="week8.html" 
+      class="group focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 rounded-3xl">
         <div class="rounded-3xl bg-white/5 border border-white/10 p-6 text-center backdrop-blur
                     hover:bg-white/10 hover:border-blue-400/50 transition">
           <p class="text-sm text-white/60 mb-2">Documentatie</p>
           <h2 class="text-xl font-bold mb-3">Week 8</h2>
+
+          <!-- THEMA TEKST -->
+         <p class="text-sm text-white/100 mb-4">
+          App schermen & herbruikbare onderdelen
+       </p>
+
           <span class="text-sm text-blue-300 group-hover:text-blue-200">Bekijk →</span>
         </div>
       </a>
 
-      <a href="week9.html" class="group">
+      <a href="week9.html" 
+      class="group focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 rounded-3xl">
         <div class="rounded-3xl bg-white/5 border border-white/10 p-6 text-center backdrop-blur
                     hover:bg-white/10 hover:border-blue-400/50 transition">
           <p class="text-sm text-white/60 mb-2">Documentatie</p>
           <h2 class="text-xl font-bold mb-3">Week 9</h2>
+
+          <!-- THEMA TEKST -->
+         <p class="text-sm text-white/100 mb-4">
+          Filteren & zoekformulieren
+       </p>
+
           <span class="text-sm text-blue-300 group-hover:text-blue-200">Bekijk →</span>
         </div>
       </a>
 
-      <a href="week10.html" class="group">
+      <a href="week10.html" 
+      class="group focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 rounded-3xl">
         <div class="rounded-3xl bg-white/5 border border-white/10 p-6 text-center backdrop-blur
                     hover:bg-white/10 hover:border-blue-400/50 transition">
           <p class="text-sm text-white/60 mb-2">Documentatie</p>
           <h2 class="text-xl font-bold mb-3">Week 10</h2>
+
+          <!-- THEMA TEKST -->
+         <p class="text-sm text-white/100 mb-4">
+          Eerste concept & ideeën
+       </p>
+
           <span class="text-sm text-blue-300 group-hover:text-blue-200">Bekijk →</span>
         </div>
       </a>
@@ -133,4 +228,5 @@
 
 </body>
 </html>
+
 
